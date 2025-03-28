@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!-- Navigatiebalk -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <!-- De navigatiebalk is 60px hoog -->
+            <RowDefinition Height="*"/>
+            <!-- De rest van de ruimte wordt gebruikt door de inhoud -->
+        </Grid.RowDefinitions>
 
+        <!-- Navigatiebalk -->
+        <Border Background="AliceBlue" Grid.Row="0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <Button Content="Home" Margin="10" Padding="10,5" Click="HomeButton_Click"/>
+                <Button Content="Bestellingen" Margin="10" Padding="10,5" Click="BestellingenButton_Click"/>
+                <Button Content="Producten" Margin="10" Padding="10,5" Click="ProductenButton_Click"/>
+                <Button Content="Klanten" Margin="10" Padding="10,5" Click="KlantenButton_Click"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Welkomstbericht -->
+        <TextBlock Grid.Row="1" Text="Welkom bij Rita!" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
     </Grid>
 </Window>

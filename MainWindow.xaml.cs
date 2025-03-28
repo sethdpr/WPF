@@ -20,5 +20,27 @@ namespace WPF
         {
             InitializeComponent();
         }
+
+
+        // Event handlers voor knoppen
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Home geselecteerd!");
+        }
+
+        private void BestellingenButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Bestellingen geselecteerd!");
+        }
+
+        private void ProductenButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Producten geselecteerd!");
+        }
+
+        private void KlantenButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Klanten geselecteerd!");
+        }
     }
 }
